@@ -39,3 +39,26 @@ $.('#cancel').on('click', function (e){
 	e.preventDefault();
 	$.('#newTaskForm, #newListItem').fadeToggle('fast', 'linear');
 });
+
+$(document).on('click', '#item', function(e) {
+	e.preventDefault();
+	var task = this;
+	advanceTask(task);
+	this.id = 'inProgress';
+	$('currentList').append(this.outerHTML);
+});
+
+$(document).on('click', '#inProgress', function(e) {
+	e.preventDefault();
+	var task = this;
+	var changeIcon = task.outerHTML.replace('glyphicon-arrow-right', 'gliphicon-remove');
+	advanceTask(task);
+	$('archivedList').append(changeIcon);
+});
+
+$(document).on('click', '#archived', function (e)){
+	e.preventDefault();
+	var task = this;
+	advanceTask(task);
+});
+
