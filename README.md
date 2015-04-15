@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_QywEWF
 #Listo with jQuery
 
 Today we will be turning our HTML / CSS assessment into a real life web application using jQuery named Listo!
@@ -337,3 +338,7 @@ http://diveintohtml5.info/storage.html
 https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 
 Good luck!
+=======
+# jQuery2
+Using jQuery2 to make Listo
+>>>>>>> .merge_file_NHp820
